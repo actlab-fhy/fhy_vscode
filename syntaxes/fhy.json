@@ -1,0 +1,154 @@
+{
+  "scopeName": "source.fhy",
+  "name": "FhY",
+  "fileTypes": ["fhy"],
+  "patterns": [
+    {
+      "name": "comment.line.fhy",
+      "match": "#.*"
+    },
+    {
+      "name": "keyword.control.import.fhy",
+      "match": "\\bimport\\b"
+    },
+    {
+      "comment": "keywords that define functions",
+      "name": "keyword.control.function.fhy",
+      "match": "\\b(proc|op|native)\\b"
+    },
+    {
+      "comment": "keywords that delimit flow conditionals",
+      "name": "keyword.control.conditional.fhy",
+      "match": "\\b(if|else)\\b"
+    },
+    {
+      "name": "keyword.control.repeat.fhy",
+      "match": "\\b(forall|while)\\b"
+    },
+    {
+      "name": "keyword.control.return.fhy",
+      "match": "\\breturn\\b"
+    },
+    {
+      "name": "keyword.operator.arithmetic.fhy",
+      "match": "\\+|\\-|\\*|\\/|\\%|\\*\\*"
+    },
+    {
+      "name": "keyword.operator.relational.fhy",
+      "match": "==|!=|<=|>=|<|>"
+    },
+    {
+      "name": "keyword.operator.logical.fhy",
+      "match": "&&|\\|\\||!"
+    },
+    {
+      "name": "keyword.operator.bitwise.fhy",
+      "match": "&|\\||\\^|~|<<|>>"
+    },
+    {
+      "name": "keyword.operator.assignment.fhy",
+      "match": "="
+    },
+    {
+      "name": "keyword.operator.arrow.fhy",
+      "match": "->"
+    },
+    {
+      "name": "keyword.operator.question.fhy",
+      "match": "\\?"
+    },
+    {
+      "comment": "type qualifiers",
+      "name": "storage.modifier.fhy",
+      "match": "\\b(input|output|temp|param|state|sparse)\\b"
+    },
+    {
+      "comment": "core primitive types",
+      "name": "storage.type.fhy",
+      "match": "\\b(int|float|complex)([0-9]+)?\\b"
+    },
+    {
+      "name": "keyword.type.tuple.fhy",
+      "match": "\\btuple\\b"
+    },
+    {
+      "name": "keyword.type.index.fhy",
+      "match": "\\bindex\\b"
+    },
+    {
+      "name": "constant.numeric.fhy",
+      "match": "\\b[0-9]+(?:\\.[0-9]+)?(?:[eE][+-]?[0-9]+)?\\b"
+    },
+    {
+      "name": "constant.numeric.binary.fhy",
+      "match": "0[bB][01_]+"
+    },
+    {
+      "name": "constant.numeric.octal.fhy",
+      "match": "0[oO][0-7_]+"
+    },
+    {
+      "name": "constant.numeric.hex.fhy",
+      "match": "0[xX][0-9a-fA-F_]+"
+    },
+    {
+      "name": "constant.language.boolean.fhy",
+      "match": "\\b(true|false)\\b"
+    },
+    {
+      "name": "variable.other.fhy",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    {
+      "name": "string.quoted.double.fhy",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.fhy",
+          "match": "\\\\."
+        }
+      ]
+    },
+    {
+      "name": "punctuation.separator.colon.fhy",
+      "match": ":"
+    },
+    {
+      "name": "punctuation.separator.semicolon.fhy",
+      "match": ";"
+    },
+    {
+      "name": "punctuation.separator.comma.fhy",
+      "match": ","
+    },
+    {
+      "name": "punctuation.accessor.dot.fhy",
+      "match": "\\."
+    },
+    {
+      "name": "punctuation.bracket.round.open.fhy",
+      "match": "\\("
+    },
+    {
+      "name": "punctuation.bracket.round.close.fhy",
+      "match": "\\)"
+    },
+    {
+      "name": "punctuation.bracket.square.open.fhy",
+      "match": "\\["
+    },
+    {
+      "name": "punctuation.bracket.square.close.fhy",
+      "match": "\\]"
+    },
+    {
+      "name": "punctuation.bracket.curly.open.fhy",
+      "match": "\\{"
+    },
+    {
+      "name": "punctuation.bracket.curly.close.fhy",
+      "match": "\\}"
+    }
+  ]
+}

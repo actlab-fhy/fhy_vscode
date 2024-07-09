@@ -13,7 +13,7 @@
     },
     {
       "comment": "keywords that define functions",
-      "name": "keyword.control.function.fhy",
+      "name": "support.function.fhy",
       "match": "\\b(proc|op|native)\\b"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "keyword.control.repeat.fhy",
-      "match": "\\b(forall|while)\\b"
+      "match": "\\bforall\\b"
     },
     {
       "name": "keyword.control.return.fhy",
@@ -64,7 +64,7 @@
     },
     {
       "comment": "core primitive types",
-      "name": "storage.type.fhy",
+      "name": "support.type.fhy",
       "match": "\\b(int|float|complex)([0-9]+)?\\b"
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "name": "constant.numeric.fhy",
-      "match": "\\b[0-9]+(?:\\.[0-9]+)?(?:[eE][+-]?[0-9]+)?\\b"
+      "match": "\\b[0-9]+(?:\\.[0-9]+)?(?:[eE][+-]?[0-9]+)?[jJ]?\\b"
     },
     {
       "name": "constant.numeric.binary.fhy",
@@ -98,17 +98,6 @@
     {
       "name": "variable.other.fhy",
       "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
-    },
-    {
-      "name": "string.quoted.double.fhy",
-      "begin": "\"",
-      "end": "\"",
-      "patterns": [
-        {
-          "name": "constant.character.escape.fhy",
-          "match": "\\\\."
-        }
-      ]
     },
     {
       "name": "punctuation.separator.colon.fhy",

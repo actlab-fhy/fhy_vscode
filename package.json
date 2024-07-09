@@ -1,5 +1,6 @@
 {
   "name": "fhy",
+  "publisher": "actlab-fhy",
   "repository": {
     "type": "git",
     "url": "https://github.com/actlab-fhy/fhy_vscode"
@@ -7,6 +8,7 @@
   "displayName": "FhY",
   "description": "fhy language",
   "version": "0.0.1",
+  "icon": "fhy_logo.png",
   "engines": {
     "vscode": "^1.91.0"
   },

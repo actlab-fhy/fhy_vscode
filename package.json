@@ -1,5 +1,9 @@
 {
   "name": "fhy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/actlab-fhy/fhy_vscode"
+  },
   "displayName": "FhY",
   "description": "fhy language",
   "version": "0.0.1",

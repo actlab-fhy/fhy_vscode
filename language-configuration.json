@@ -8,6 +8,14 @@
     ["[", "]"],
     ["(", ")"],
   ],
+  // Interesting Read: https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization
+  // Difficult to colorize <> template brackets without drastically reducing performance
+  // due to clashing with relational operators (since they are tokenized identically)
+  "colorizedBracketPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
   // symbols that are auto closed when typing
   "autoClosingPairs": [
     { "open": "{", "close": "}" },

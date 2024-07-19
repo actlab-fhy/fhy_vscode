@@ -1,0 +1,38 @@
+{
+  "comments": {
+    "lineComment": "#"
+  },
+  // symbols used as brackets
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+  ],
+  // Interesting Read: https://code.visualstudio.com/blogs/2021/09/29/bracket-pair-colorization
+  // Difficult to colorize <> template brackets without drastically reducing performance
+  // due to clashing with relational operators (since they are tokenized identically)
+  "colorizedBracketPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  // symbols that are auto closed when typing
+  "autoClosingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    // { "open": "'", "close": "'", "notIn": ["string", "comment"] },
+    // { "open": "\"", "close": "\"", "notIn": ["string"] },
+    // { "open": "`", "close": "`", "notIn": ["string", "comment"] }
+  ],
+  "autoCloseBefore": ";:.,=}])>` \n\t",
+  // symbols that can be used to surround a selection
+  "surroundingPairs": [
+    { "open": "{", "close": "}" },
+    { "open": "[", "close": "]" },
+    { "open": "(", "close": ")" },
+    { "open": "<", "close": ">" },
+    // ["\"", "\""],
+    // ["'", "'"]
+  ]
+}
